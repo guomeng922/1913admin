@@ -1,21 +1,23 @@
 import React,{Component} from 'react'
 import './index.less'
+import CustomNav from '../customNav'
 
 class Admin extends Component{
   render() {
     return (
       <div className="admin">
         <div className="admin-nav">
-          侧边栏
+          <CustomNav></CustomNav>
         </div>
         <div className="admin-content">
-          <div>
+          <div className="admin-content-head">
             头部信息
           </div>
-          <div>
+          <div className="admin-content-middle">
+            222
             {this.props.children}
           </div>
-          <div>
+          <div className="admin-content-foot">
             底部信息
           </div>
         </div>

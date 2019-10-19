@@ -38,7 +38,7 @@ class customNav extends Component{
     console.log(this,'自定义导航')
     return (
       <div className="custom">
-        <Menu style={{ width: 256 }} mode="vertical">
+        <Menu style={{ width: 250 }} mode="vertical">
           {this.renderItem(navData)}
           {/* <Menu.Item>首页</Menu.Item>
           <Menu.Item>设置</Menu.Item>
